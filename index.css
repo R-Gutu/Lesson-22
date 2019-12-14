@@ -1,0 +1,72 @@
+
+.top{
+    position:relative;
+    top: -200px;
+    animation-name: nothing;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.blick{
+    animation-name:blicked;
+    animation-duration: 400ms;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+}
+
+.left{
+    position:relative;
+    left:-1500px;
+    animation-name: nothing;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blicked{
+    0%{
+        color:red;
+    }
+    100%{
+        color:blue;
+    }
+}
+
+@keyframes down{
+    0%{
+        top:-200px;
+    }
+
+    100%{
+        top:0px;
+    }
+}
+
+@keyframes up{
+    0%{
+        top:0px;
+    }
+
+    100%{
+        top:-200px;
+    }
+}
+
+@keyframes left{
+    0%{
+        left:0px;
+    }
+
+    100%{
+        left:-1500px;
+    }
+}
+
+@keyframes right{
+    0%{
+        left:-1500px;
+    }
+
+    100%{
+        left:0px;
+    }
+}
